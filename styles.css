@@ -29,10 +29,24 @@
     margin: 0;
 }
 
-.button {
+.button-container {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#create {
     display: block;
     padding: 5px;
-    margin: -150px auto;
+    background-color: pink;
+    border-radius: 3px;
+    border: 1px solid red;
+}
+
+#clear {
+    display: block;
+    padding: 5px;
     background-color: pink;
     border-radius: 3px;
     border: 1px solid red;

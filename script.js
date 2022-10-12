@@ -1,6 +1,6 @@
 const container = document.querySelector(".grid")
 const containerStyle = document.querySelector(".grid").style
-const button = document.querySelector(".button")
+const button = document.querySelector("#create")
 containerStyle.width = "400px"
 containerStyle.height = "400px"
 const containerWidth = Number(containerStyle.width.replace("px", ""))
@@ -44,7 +44,16 @@ button.addEventListener('click', () => {
     function changeColor(e) {
         e.target.style.backgroundColor = randomColor()
     }
+
+    function clearColor() {
+        let gridChilds = document.querySelectorAll('.grid-child');
+        gridChilds.forEach((child) => {
+            child.style.backgroundColor = 'white';
+        })    
+    }
     
+
+    //DEFAULT SETTINGS WHEN PAGE LOADED
     createGrid(16);
     let gridChilds = document.querySelectorAll('.grid-child');
     gridChilds.forEach((child) => {
