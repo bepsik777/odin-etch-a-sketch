@@ -1,6 +1,7 @@
 const container = document.querySelector(".grid")
 const containerStyle = document.querySelector(".grid").style
 const button = document.querySelector("#create")
+const clear = document.querySelector("#clear")
 containerStyle.width = "400px"
 containerStyle.height = "400px"
 const containerWidth = Number(containerStyle.width.replace("px", ""))
@@ -21,6 +22,7 @@ button.addEventListener('click', () => {
         })}
     })
     
+ clear.addEventListener('click', clearColor)   
     
     
     
