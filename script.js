@@ -4,8 +4,8 @@ const button = document.querySelector("#create")
 const eraser = document.querySelector("#eraser")
 const clear = document.querySelector("#clear")
 let value = false;
-containerStyle.width = "600px"
-containerStyle.height = "600px"
+containerStyle.width = "500px"
+containerStyle.height = "500px"
 const containerWidth = Number(containerStyle.width.replace("px", ""))
 
 
