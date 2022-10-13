@@ -33,11 +33,13 @@ button.addEventListener('click', () => {
             value = true;
             gridChilds.forEach((child) => {
                 child.addEventListener('mouseover', changeColorToWhite);
+                eraser.style.backgroundColor = "deeppink";
             })
         } else if (value === true) {
             value = false;
             gridChilds.forEach((child) => {
             child.removeEventListener('mouseover', changeColorToWhite)
+            eraser.style.backgroundColor = "pink";
         })
     }})
 
@@ -83,6 +85,8 @@ button.addEventListener('click', () => {
     gridChilds.forEach((child) => {
         child.addEventListener('mouseover', changeColor);
     })
+
+    // FOR NUMERATING THE GRID CHILDREN
     // for (let i = 0; i < gridChilds.length; i++) {
     //     gridChilds[i].textContent = `${i}`
     // }
